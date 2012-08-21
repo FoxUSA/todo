@@ -14,6 +14,11 @@
 - UI (signup, login, add/delete/manage events) all uses AJAX for usability
 - Users can signup for accounts to create/manage their to do lists
 - Authentication uses PHP sessions
+ 
+# In progress
+- Three task statuses
+- Crons for daily email reminders
 
 # Libraries used
 - jQuery with jQDialog plugin
+- 
