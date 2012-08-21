@@ -16,5 +16,6 @@ CREATE TABLE todo_event (
 	title varchar(50) NOT NULL DEFAULT '',
 	description varchar(200) NOT NULL DEFAULT '',
 	status enum('done', 'pending') NOT NULL DEFAULT 'pending',
+	display enum('true', 'false') NOT NULL DEFAULT 'true',
 	PRIMARY KEY (id)
 );

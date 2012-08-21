@@ -55,9 +55,9 @@ loadHeader("Hello, ".$display_name);
 			var event_title = $('#new_e_title').val();
 			var event_desc = $('#new_e_desc').val();
 
-			if((event_title.length < 3 || event_desc.length < 3) || (event_title.length > 50 || event_desc.length > 100)){
+			if((event_title.length < 3 || event_desc.length < 0) || (event_title.length > 50 || event_desc.length > 100)){
 				$.jqDialog.notify("<p align='left'>Only [3 to 50] characters allowed for Task Title.<br/>"
-				+"Only [3 to 100] characters allowed for Task Description.</p>", 3);
+				+"Only [0 to 100] characters allowed for Task Description.</p>", 3);
 				return false;
 			}
 			
@@ -94,7 +94,6 @@ loadHeader("Hello, ".$display_name);
 
 </div> <!-- event container -->
 <div class="clear"> </div>
-<p class="credit"><a href="">Simple ToDo List,</a> By Kamaleshwar</p>
 <?php
 loadFooter();
 ?>

@@ -43,18 +43,6 @@ if( INSTALLED_DB == false ){
 			<input type="text" name="site_url" value="http://" id="site_url"/>
 		</p>
 		<p>
-			<label>
-				Twitter consumer key (optional, for Twitter authentication)
-			</label>
-			<input type="text" name="twitter_key"/>
-		</p>
-		<p>
-			<label>
-				Twitter consumer secret (optional, for Twitter authentication)
-			</label>
-			<input type="text" name="twitter_secret"/>
-		</p>
-		<p>
 			<input type="submit" value="Install" class="button" />
 		</p>
 		

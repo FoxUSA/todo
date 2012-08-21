@@ -115,14 +115,11 @@ loadHeader("Welcome!");
 	
 </script>
 	<div class="home_container">
-		<h1>Simple To-do List</h1>
+		<h1>To-do List</h1>
 		<div class="home_buttons">
 			<div class="home_box" id="login_box">Login</div>
 			<div class="home_box" id="reg_box">Register</div>
 			<div class="clear"> </div>
-			<?php if(TWITTER_KEY && TWITTER_SECRET) { ?>
-				<p><a href="twitter_login.php"><img src="images/twitter_sign.png" alt="Twitter Sign In"/></a></p>
-			<?php } ?>
 		</div>
 		<div id="login">
 
@@ -169,7 +166,6 @@ loadHeader("Welcome!");
 
 		</div>
 		<div class="clear"> </div>
-		<p class="credit"><a href="">Simple ToDo List</a> By, Kamaleshwar </p>
 	</div>
 <?php
 loadFooter();

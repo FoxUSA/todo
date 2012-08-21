@@ -45,9 +45,9 @@ if(LOGGED_IN == 1){
 
 /* Destroys current session when logged out.*/
 if(isset($_GET['logout'])){
-
+	
 	if( $_GET['logout'] == 1){
-		session_destroy();
+		//session_destroy();
 		header("Location: index.php");
 	}
 	exit;

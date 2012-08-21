@@ -15,10 +15,11 @@ else{
 
 if( initDB() == true ){
 
-	if(isset($_POST['remove_event_id'])){
+	if( isset($_POST['remove_event_id'])){
 		$event_id = $_POST['remove_event_id'];
 		/*REMOVE the respective event here*/
-		$query = "DELETE from todo_event where id='".$event_id."'";
+		//$query = "DELETE from todo_event where id='".$event_id."'";
+		$query = "UPDATE todo_event SET display = 'false' WHERE id='".$event_id."'";
 		$exec = mysql_query($query);
 		if( !$exec ){
 			die(mysql_error());
@@ -61,7 +62,7 @@ if( initDB() == true ){
 	
 	$user_id = getUserId($_SESSION['user_id']);
 	
-	$query = "SELECT * FROM todo_event WHERE user_id ='".$user_id."' ORDER BY status DESC";
+	$query = "SELECT * FROM todo_event WHERE user_id ='".$user_id."' AND display <>'false' ORDER BY status DESC";
 	$exec = mysql_query($query);
 	if( !$exec ){
 		die (mysql_error());
