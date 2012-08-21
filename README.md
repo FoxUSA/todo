@@ -1,7 +1,4 @@
-# Simple To-Do list demo
-### A prototype web app made for CodeChef by Kamaleshwar, October 2011
-### Forked by FoxUSA
-
+# Simple To-Do list
 
 # Installation
 - Upload all files to the webserver
