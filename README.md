@@ -16,7 +16,8 @@
 - Authentication uses PHP sessions
  
 # In progress
-- Three task statuses
+- Three task statuses (Todo, Inprogress, Done)
+- Ability to hide tasks
 - Crons for daily email reminders
 
 # Libraries used
