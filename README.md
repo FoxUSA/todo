@@ -19,4 +19,3 @@
 
 # Libraries used
 - jQuery with jQDialog plugin
-- 
